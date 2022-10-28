@@ -1,0 +1,20 @@
+.logo {
+    display: block;
+    
+    padding-top: 24px;
+    padding-bottom: 25px;
+
+    font-family: $logo-font-family;
+    @include font(700, 26px, 1.19, inherit);
+    text-decoration: none;
+
+    color: $accent-color;
+
+    &__part {
+       color: $logo-header-second-color; 
+    }
+
+    &__part--color-change {
+        color: $footer-text-color;
+    }
+}

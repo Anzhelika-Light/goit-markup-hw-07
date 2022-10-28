@@ -1,0 +1,22 @@
+.footer-social {
+    margin-left: 70px;
+}
+
+.join {
+    @include font(700, 14px, 1.14, inherit);
+    text-transform: uppercase;
+
+    color: $footer-join-word-color;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.networks-list__link--color-change {
+    background-color: $footer-network-icon-background-color;
+    color: $footer-network-icon-color;
+
+    &:hover,
+    &:focus {
+        background-color: $footer-network-icon-background-color-hover;
+    }
+}

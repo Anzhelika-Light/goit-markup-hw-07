@@ -1,0 +1,36 @@
+.advantage {
+    display: flex;
+
+    &__item {
+        width: calc((100% - 90px) / 4);
+    }
+
+    &__item:not(:last-child) {
+        margin-right: 30px;
+    }
+
+    &__icon-container {
+        display: flex;
+        height: 120px;
+        margin-bottom: 30px;
+        background-color: $advantage-icon-background;
+        border-radius: 4px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__name {
+        @include font(700, 14px, 1.14, inherit);
+        text-transform: uppercase;
+        color: $title-text-color;
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+
+    &__description {
+        @include font(inherit, 14px, 1.71, inherit);
+        color: $text-color;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
