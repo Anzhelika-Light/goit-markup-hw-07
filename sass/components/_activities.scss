@@ -1,27 +1,5 @@
-.our-activities {
-    padding-top: 0;
-}
-
-.activities-title {
-    margin-top: 0;
-    margin-bottom: 50px;
-
-    @include font(700, 36px, 1.17, inherit);
-    text-align: center;
-    color: $title-text-color;
-}
-
-.activity {
+.activities {
     display: flex;
-
-    &__item {
-    width: calc((100% - 60px) / 3);
-    position: relative;
-    }
-
-    &__item:not(:last-child) {
-        margin-right: 30px;
-    }
 
     &__overlay {
         position: absolute;
@@ -46,8 +24,11 @@
     }
 }
 
-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
+.activities__item {
+    width: calc((100% - 60px) / 3);
+    position: relative;
+
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
 }

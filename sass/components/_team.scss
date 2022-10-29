@@ -1,87 +1,74 @@
-.team {
-    background-color: $team-section-background-color;
+.teammates-list {
+    display: flex;
+}
+ 
+.teammates-list__item {
+    width: calc((100% - 90px) / 4);
+    background-color: $teammate-background-color;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
 }
 
-.teammates-title {
-    margin-top: 0;
-    margin-bottom: 50px;
+.teammates-list__content {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 32px;
+    padding-left: 32px;
+}
 
-    @include font(700, 36px, 1.16, inherit);
+.teammates-list__title {
+    margin-top: 0;
+    margin-bottom: 10px;
+    @include font(500, 16px, 1.19, inherit);
     text-align: center;
     color: $title-text-color;
 }
 
-.teammates-list {
-    display: flex;
- 
-    &__item {
-        width: calc((100% - 90px) / 4);
-        background-color: $teammate-background-color;
-        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-        border-radius: 0px 0px 4px 4px;
-    }
-
-    &__item:not(:last-child) {
-        margin-right: 30px;
-    }
-
-    &__content {
-        padding-top: 30px;
-        padding-bottom: 30px;
-        padding-right: 32px;
-        padding-left: 32px;
-    }
-
-    &__name {
-        margin-top: 0;
-        margin-bottom: 10px;
-        @include font(500, 16px, 1.19, inherit);
-        text-align: center;
-        color: $title-text-color;
-    }
-
-    &__position {
-        margin-top: 0;
-        margin-bottom: 16px;
-        @include font(inherit, 16px, 1.19, inherit);
-        text-align: center;
-        color: $text-color;
-    }
+.teammates-list__text {
+    margin-top: 0;
+    margin-bottom: 16px;
+    @include font(inherit, 16px, 1.19, inherit);
+    text-align: center;
+    color: $text-color;
 }
 
 .networks-list {
-    display: flex; 
+    display: flex;
+}
     
-    &__item {
+.networks-list__item {
     width: 44px;
     height: 44px;
-    }
 
-    &__item:not(:last-child) {
+    &:not(:last-child) {
         margin-right: 10px;
     }
+}
 
-    &__link {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+.networks-list__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-        width: 100%;
-        height: 100%;
+    width: 100%;
+    height: 100%;
         
-        border-radius: 50%;
-        color: $team-network-icon-color;
+    border-radius: 50%;
+    color: $team-network-icon-color;
         
-        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    &__link:hover,
-    &__link:focus {
+    &:hover,
+    &:focus {
         background-color: $team-network-icon-background-color;
         color: $team-network-icon-color-hover;
     }
+}
 
-    &__icon {
-        fill: currentColor;
-    }
+.networks-list__icon {
+    fill: currentColor;
 }

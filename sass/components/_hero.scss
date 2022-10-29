@@ -1,4 +1,4 @@
-.overlay {
+.hero {
     max-width: 1600px;
     height: 600px;
     margin-left: auto;
@@ -11,15 +11,13 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-}
-
-.hero {
     background-color: $banner-background-color;
     padding-top: 200px;
     padding-bottom: 200px;
     text-align: center;
+}
 
-    &__title {
+.hero__title {
     width: 696px;
     margin: 0 auto;
     margin-top: 0;
@@ -31,7 +29,6 @@
     text-transform: uppercase;
 
     color: $banner-text-color;
-    }
 }
 
 .btn {
@@ -54,7 +51,7 @@
     }
 }
 
-.btn-hero--modified {
+.hero__btn {
     min-width: 216px;
     padding: 10px 32px;
 }

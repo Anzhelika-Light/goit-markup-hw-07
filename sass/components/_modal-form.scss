@@ -80,13 +80,13 @@
     border-radius: 4px;
 
     resize: none;
-}
 
-.form__comment-textarea::placeholder {
+    &::placeholder {
     font-family: inherit;
     @include font(inherit, 12px, 1.17, 0.01em);
 
     color: rgba(117, 117, 117, 0.5);
+}
 }
 
 .form__input-field {
@@ -156,7 +156,7 @@
     background-color: $accent-color;
 }
 
-.btn-modal--modified  { 
+.modal__btn  { 
     width: 200px;
     height: 50px;
 }

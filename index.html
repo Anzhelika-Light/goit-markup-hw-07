@@ -18,16 +18,16 @@
 <body>
     <!-- Header -->
     <header class="page-header">
-        <div class="container main-nav">
+        <div class="container page-header__container">
             <nav class="nav">
                 <a href="./index.html" class="logo">Web<span class="logo__part">Studio</span></a>
-                <ul class="nav-list list">
-                    <li class="nav-list__item"><a href="./index.html" class="nav-list__link current">Студія</a></li>
+                <ul class="nav-list">
+                    <li class="nav-list__item"><a href="./index.html" class="nav-list__link nav-list__link--current">Студія</a></li>
                     <li class="nav-list__item"><a href="./portfolio.html" class="nav-list__link">Портфоліо</a></li>
                     <li class="nav-list__item"><a href="./index.html" class="nav-list__link">Контакти</a></li>
                 </ul>
             </nav>
-            <ul class="header-contacts list">
+            <ul class="header-contacts">
                 <li class="header-contacts__item">
                     <a href="mailto:info@devstudio.com" class="header-contacts__link">
                         <svg class="header-contacts__icon" width="16" height="12">
@@ -50,10 +50,10 @@
 
     <main>
         <!-- Hero -->
-        <section class="hero overlay">
+        <section class="hero">
             <div class="container">
                 <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
-                <button data-modal-open type="button" class="btn btn-hero--modified">Замовити послугу</button>
+                <button data-modal-open type="button" class="btn hero__btn">Замовити послугу</button>
             </div>
         </section>
 
@@ -61,79 +61,79 @@
         <section class="section">
             <div class="container">
                 <h2 class="section__title section__title--visually-hidden">Наші переваги</h2>
-                <ul class="list advantage">
-                    <li class="advantage__item">
-                        <div class="advantage__icon-container">
-                            <svg class="advantage__icon" width="70" height="70">
+                <ul class="advantages">
+                    <li class="advantages__item">
+                        <div class="advantages__icon-container">
+                            <svg class="advantages__icon" width="70" height="70">
                                 <use href="./images/sprite.svg#antenna"></use>
                             </svg>
                         </div>
-                        <h3 class="advantage__name">Увага до деталей</h3>
-                        <p class="advantage__description">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
+                        <h3 class="advantages__title">Увага до деталей</h3>
+                        <p class="advantages__description">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
                     </li>
-                    <li class="advantage__item">
-                        <div class="advantage__icon-container">
-                            <svg class="advantage__icon" width="70" height="70">
+                    <li class="advantages__item">
+                        <div class="advantages__icon-container">
+                            <svg class="advantages__icon" width="70" height="70">
                                 <use href="./images/sprite.svg#clock"></use>
                             </svg>
                         </div>
-                        <h3 class="advantage__name">Пунктуальність</h3>
-                        <p class="advantage__description">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
+                        <h3 class="advantages__title">Пунктуальність</h3>
+                        <p class="advantages__description">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
                     </li>
-                    <li class="advantage__item">
-                        <div class="advantage__icon-container">
-                            <svg class="advantage__icon" width="70" height="70">
+                    <li class="advantages__item">
+                        <div class="advantages__icon-container">
+                            <svg class="advantages__icon" width="70" height="70">
                                 <use href="./images/sprite.svg#diagram"></use>
                             </svg>
                         </div>
-                        <h3 class="advantage__name">Планування</h3>
-                        <p class="advantage__description">Так само консультація з широким активом значною мірою зумовлює.</p>
+                        <h3 class="advantages__title">Планування</h3>
+                        <p class="advantages__description">Так само консультація з широким активом значною мірою зумовлює.</p>
                     </li>
-                    <li class="advantage__item">
-                        <div class="advantage__icon-container">
-                            <svg class="advantage__icon" width="70" height="70">
+                    <li class="advantages__item">
+                        <div class="advantages__icon-container">
+                            <svg class="advantages__icon" width="70" height="70">
                                 <use href="./images/sprite.svg#astronaut"></use>
                             </svg>
                         </div>
-                        <h3 class="advantage__name">Сучасні технології</h3>
-                        <p class="advantage__description">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
+                        <h3 class="advantages__title">Сучасні технології</h3>
+                        <p class="advantages__description">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
                     </li>
                 </ul>
             </div>
         </section>
 
         <!-- Our activities -->
-        <section class="section our-activities">
+        <section class="section section--no-padding-top">
             <div class="container">
-                <h2 class="activities-title">Чим ми займаємося</h2>
-                <ul class="list activity">
-                    <li class="activity__item">
+                <h2 class="section__title">Чим ми займаємося</h2>
+                <ul class="activities">
+                    <li class="activities__item">
                         <img src="./images/img-1-optimized.jpg" alt="Створення сайту" width="370" height="294">
-                        <p class="activity__overlay">Десктопні додатки</p>
+                        <p class="activities__overlay">Десктопні додатки</p>
                     </li>
-                    <li class="activity__item">
+                    <li class="activities__item">
                         <img src="./images/img-2-optimized.jpg" alt="Просування сайту" width="370" height="294">
-                        <p class="activity__overlay">Мобільні додатки</p>
+                        <p class="activities__overlay">Мобільні додатки</p>
                     </li>
-                    <li class="activity__item">
+                    <li class="activities__item">
                         <img src="./images/img-3-optimized.jpg" alt="Редизайн сайту" width="370" height="294">
-                        <p class="activity__overlay">Дизайнерські рішення</p>
+                        <p class="activities__overlay">Дизайнерські рішення</p>
                     </li>
                 </ul>
             </div>
         </section>
 
         <!-- Our team -->
-        <section class="section team">
+        <section class="section section--team-background">
             <div class="container">
-                <h2 class="teammates-title">Наша команда</h2>
-                <ul class="list teammates-list">
+                <h2 class="section__title">Наша команда</h2>
+                <ul class="teammates-list">
                     <li class="teammates-list__item">
                         <img src="./images/team-member-1-optimized.jpg" alt="Ігор Дем'яненко" width="270" height="260">
                         <div class="teammates-list__content">
-                            <h3 class="teammates-list__name">Ігор Дем'яненко</h3>
-                            <p class="teammates-list__position">Product Designer</p>
-                            <ul class="list networks-list">
+                            <h3 class="teammates-list__title">Ігор Дем'яненко</h3>
+                            <p class="teammates-list__text">Product Designer</p>
+                            <ul class="networks-list">
                                 <li class="networks-list__item">
                                     <a href="" class="networks-list__link" >
                                         <svg class="networks-list__icon" width="20" height="20">
@@ -168,9 +168,9 @@
                     <li class="teammates-list__item">
                         <img src="./images/team-member-2-optimized.jpg" alt="Ольга Рєпіна" width="270" height="260">
                         <div class="teammates-list__content">
-                            <h3 class="teammates-list__name">Ольга Рєпіна</h3>
-                            <p class="teammates-list__position">Frontend Developer</p>
-                            <ul class="list networks-list">
+                            <h3 class="teammates-list__title">Ольга Рєпіна</h3>
+                            <p class="teammates-list__text">Frontend Developer</p>
+                            <ul class="networks-list">
                                 <li class="networks-list__item">
                                     <a href="" class="networks-list__link">
                                         <svg class="networks-list__icon" width="20" height="20">
@@ -205,9 +205,9 @@
                     <li class="teammates-list__item">
                         <img src="./images/team-member-3-optimized.jpg" alt="Микола Тарасов" width="270" height="260">
                         <div class="teammates-list__content">
-                            <h3 class="teammates-list__name">Микола Тарасов</h3>
-                            <p class="teammates-list__position">Marketing</p>
-                            <ul class="list networks-list">
+                            <h3 class="teammates-list__title">Микола Тарасов</h3>
+                            <p class="teammates-list__text">Marketing</p>
+                            <ul class="networks-list">
                                 <li class="networks-list__item">
                                     <a href="" class="networks-list__link">
                                         <svg class="networks-list__icon" width="20" height="20">
@@ -242,9 +242,9 @@
                     <li class="teammates-list__item">
                         <img src="./images/team-member-4-optimized.jpg" alt="Микола Тарасов" width="270" height="260">
                         <div class="teammates-list__content">
-                            <h3 class="teammates-list__name">Михайло Єрмаков</h3>
-                            <p class="teammates-list__position">UI Designer</p>
-                            <ul class="list networks-list">
+                            <h3 class="teammates-list__title">Михайло Єрмаков</h3>
+                            <p class="teammates-list__text">UI Designer</p>
+                            <ul class="networks-list">
                                 <li class="networks-list__item">
                                     <a href="" class="networks-list__link">
                                         <svg class="networks-list__icon" width="20" height="20">
@@ -283,46 +283,46 @@
         <!-- Clients -->
         <section class="section">
             <div class="container">
-                <h2 class="clients-title">Постійні клієнти</h2>
-                <ul class="list client">
-                    <li class="client__item">
-                        <a href="" class="client__link">
-                            <svg class="client__icon" width="106" height="60">
+                <h2 class="section__title">Постійні клієнти</h2>
+                <ul class="clients">
+                    <li class="clients__item">
+                        <a href="" class="clients__link">
+                            <svg class="clients__icon" width="106" height="60">
                                 <use href="./images/sprite.svg#logo1"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="client__item">
-                        <a href="" class="client__link">
-                            <svg class="client__icon" width="106" height="60">
+                    <li class="clients__item">
+                        <a href="" class="clients__link">
+                            <svg class="clients__icon" width="106" height="60">
                                 <use href="./images/sprite.svg#logo2"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="client__item">
-                        <a href="" class="client__link">
-                            <svg class="client__icon" width="106" height="60">
+                    <li class="clients__item">
+                        <a href="" class="clients__link">
+                            <svg class="clients__icon" width="106" height="60">
                                 <use href="./images/sprite.svg#logo3"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="client__item">
-                        <a href="" class="client__link">
-                            <svg class="client__icon" width="106" height="60">
+                    <li class="clients__item">
+                        <a href="" class="clients__link">
+                            <svg class="clients__icon" width="106" height="60">
                                 <use href="./images/sprite.svg#logo4"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="client__item">
-                        <a href="" class="client__link">
-                            <svg class="client__icon" width="106" height="60">
+                    <li class="clients__item">
+                        <a href="" class="clients__link">
+                            <svg class="clients__icon" width="106" height="60">
                                 <use href="./images/sprite.svg#logo5"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="client__item">
-                        <a href="" class="client__link">
-                            <svg class="client__icon" width="106" height="60">
+                    <li class="clients__item">
+                        <a href="" class="clients__link">
+                            <svg class="clients__icon" width="106" height="60">
                                 <use href="./images/sprite.svg#logo6"></use>
                             </svg>
                         </a>
@@ -337,7 +337,7 @@
             <div class="footer-contacts">
                 <a href="./index.html" class="logo">Web<span class="logo__part logo__part--color-change">Studio</span></a>
                 <address class="address">
-                <ul class="footer-contacts list">
+                <ul class="footer-contacts">
                     <li class="footer-contacts__item"><a href="https://www.google.com/maps/place/%D0%B1%D1%83%D0%BB%D1%8C%D0%B2%D0%B0%D1%80+%D0%9B%D0%B5%D1%81%D1%96+%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D0%BA%D0%B8,+26,+%D0%9A%D0%B8%D1%97%D0%B2,+02000/@50.4265807,30.5383858,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858"
                             class="footer-contacts__link footer-contacts__link-1">м. Київ, пр-т Лесі Українки, 26</a></li>
                     <li class="footer-contacts__item"><a href="mailto:info@devstudio.com" class="footer-contacts__link">info@devstudio.com</a></li>
@@ -347,7 +347,7 @@
             </div>
             <div class="footer-social">
                 <p class="join">приєднуйтесь</p>
-                <ul class="list networks-list">
+                <ul class="networks-list">
                     <li class="networks-list__item">
                         <a href="" class="networks-list__link networks-list__link--color-change">
                             <svg class="networks-list__icon" width="20" height="20">
@@ -382,7 +382,7 @@
                 <p class="join">Підпишіться на розсилку</p>
                 <div class="subscribtion__form">
                     <input type="email" name="email" placeholder="E-mail" class="subscription__input">
-                    <button type="submit" class="btn btn--subscription--modified">
+                    <button type="submit" class="btn subscription__btn">
                         Підписатися
                         <svg class="subscribtion__icon" width="24" height="24">
                             <use href="./images/sprite.svg#subscribe"></use>
@@ -467,7 +467,7 @@
                 </label>
             </div>
     
-            <button type="submit" class="btn btn-modal--modified">Відправити</button>
+            <button type="submit" class="btn modal__btn">Відправити</button>
         </form>
     </div>
 

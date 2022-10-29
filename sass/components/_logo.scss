@@ -9,12 +9,12 @@
     text-decoration: none;
 
     color: $accent-color;
+}
 
-    &__part {
-       color: $logo-header-second-color; 
-    }
+.logo__part {
+    color: $logo-header-second-color; 
 
-    &__part--color-change {
+    &--color-change {
         color: $footer-text-color;
     }
 }

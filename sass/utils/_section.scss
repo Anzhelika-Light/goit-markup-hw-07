@@ -1,0 +1,24 @@
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+    &__title {
+    margin-top: 0;
+    margin-bottom: 50px;
+    @include font(700, 36px, 1.16, inherit);
+    text-align: center;
+    color: $title-text-color;
+    }
+
+    &__title--visually-hidden {
+    @extend %visually-hidden;
+    }
+
+    &--no-padding-top {
+    padding-top: 0;
+    }
+
+    &--team-background {
+    background-color: $team-section-background-color;
+    }
+}
